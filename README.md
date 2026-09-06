@@ -1,33 +1,70 @@
-# AgriSphere
+# 🌾 AgriSphere
 
-An SIH 2026 PS 132 prototype for a trusted farm-to-market intelligence platform.
+## Smart India Hackathon 2026
 
-## Run locally
+**Problem Statement ID:** SIH26132  
+**Problem Statement:** Strengthening market linkages and price discovery for farmers  
+**Theme:** Agriculture, FoodTech & Rural Development
 
-This is a dependency-free static PWA. From this directory, use any static server, then open the displayed local URL.
+## 🚀 About AgriSphere
 
-```bash
-npx serve .
-```
+AgriSphere connects **Farmers, FPOs and Buyers** through a transparent agricultural marketplace. It helps farmers compare prices, find suitable buyers, and make better selling decisions.
 
-## Prototype flows
+## 🎯 Problem We Solve
 
-- Farmer workspace with market/net-realisation ranking
-- 14-day sell-window forecast and early alert state
-- Produce passport with photo/video evidence workflow
-- AI grading and deepfake-screening demo states
-- Buyer offer chain, counter-offer and deal check
-- FPO pooled produce state and payment split-back story
-- Explainable reliability score and hash-chain audit viewer
-- Marathi-first interface, responsive/mobile-ready layout, and offline cache
+Farmers often lack mandi-price visibility, bargaining power and buyer verification. Buyers struggle to find reliable produce of the required quality and quantity. AgriSphere connects both sides with quality evidence, price intelligence and reliable transaction records.
 
-## Demo boundaries
+## 💡 Key Features
 
-The experience uses seeded demonstration data. Agmarknet/eNAM, GPS/camera capture, CNN grading, deepfake screening, notification delivery, payment tracking, and data pipeline cards are UI prototypes rather than live integrations. Production use requires secure backend services, verified data access, and consent-based camera/location handling.
+### 👨‍🌾 Farmer
+- Multi-mandi price comparison and net-realisation ranking
+- Sell-or-hold recommendation with a 14-day forecast
+- AI-assisted crop grading and produce passport
+- Buyer discovery, negotiation and reliability score
 
-## Files
+### 🏢 FPO
+- Pool compatible farmer lots into buyer-grade lots
+- Track contributions, quality verification and payment split-back
 
-- `index.html` – user interface
-- `styles.css` – responsive visual system
-- `app.js` – navigation and interactive demo states
-- `sw.js` / `manifest.webmanifest` – PWA support
+### 🛒 Buyer
+- Discover lots by crop, grade, quantity and distance
+- View quality evidence and grading reports
+- Structured offer, counter-offer and agreement workflow
+
+### 🛡️ Admin
+- Verification workflow, transaction monitoring and audit trail
+
+## 🤖 AI & Data Features
+
+- Crop quality grading using MobileNetV2 (integration point)
+- Price forecasting using Prophet / XGBoost (integration point)
+- Deepfake-screening state for crop photo/video evidence
+- Agmarknet and eNAM data-pipeline integration design
+
+## 🏗️ Technology Stack
+
+| Technology | Purpose |
+| --- | --- |
+| HTML, CSS, JavaScript | Responsive frontend prototype |
+| PWA Manifest + Service Worker | Installable, offline-ready app |
+| FastAPI + MobileNetV2 | Planned AI grading service |
+| Prophet + XGBoost | Planned price forecasting |
+| PostgreSQL + Redis | Planned data storage and caching |
+| Agmarknet / eNAM API | Planned market-price data source |
+
+## 🔗 Live Prototype
+
+👉 **[Open AgriSphere Live Demo](https://dnyaneshwari0804.github.io/AgriSphere/)**
+
+## ⚠️ Demo Scope
+
+This is a functional frontend prototype using seeded demonstration data. Government market APIs, live AI grading, deepfake detection, payments, GPS/camera capture and notifications are represented as production integration points; they are not claimed as live services.
+
+## 👥 Team
+
+**Team Name:** AgriSphere  
+**Event:** Smart India Hackathon 2026
+
+## 🌱 Our Vision
+
+A transparent marketplace where farmers receive better prices, buyers get reliable produce, FPOs gain market access, and everyone makes decisions with trustworthy information.
